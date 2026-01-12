@@ -168,7 +168,7 @@ with tab2:
         if layer_risk:
             # Using Scatterplot for zones in 3D (simplified representation)
             risk_layer = pdk.Layer(
-                "ScatterplotLayer",
+                "ViolinplotLayer",
                 data=risk_3d,
                 get_position=["lon", "lat"],
                 get_radius=1000,
@@ -236,5 +236,6 @@ with tab4:
         if submitted:
             st.success("✅ Report submitted successfully! This data would be sent to the backend database in a production environment.")
             st.balloons()
+
 
 
