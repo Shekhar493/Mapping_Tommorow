@@ -47,7 +47,6 @@ with st.sidebar:
         "This dashboard visualizes disaster risks and circular economy resources "
         "in Pokhara using OpenStreetMap data."
     )
-    # st.markdown("Created by **Antigravity**")
 
 # --- MAIN DATA FETCHING ---
 place_name = "Pokhara, Nepal"
@@ -237,4 +236,5 @@ with tab4:
         if submitted:
             st.success("✅ Report submitted successfully! This data would be sent to the backend database in a production environment.")
             st.balloons()
+
 
